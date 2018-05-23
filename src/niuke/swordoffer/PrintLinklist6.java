@@ -44,11 +44,3 @@ public class PrintLinklist6 {
 }
 
 
-
-class ListNode {
-    int val;
-    ListNode next = null;
-    ListNode(int val) {
-        this.val = val;
-    }
-}
