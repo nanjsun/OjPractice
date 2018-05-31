@@ -1,3 +1,6 @@
+/**
+ * @author nanj2
+ */
 public class QuickSort {
 
     private int[] arr;
@@ -26,30 +29,20 @@ public class QuickSort {
                 if(j == left) {
                     break;
                 }
-//                break;
             }
-//            System.out.println("left:" + left);
             System.out.println("left  :" + left +   "-left   value:" + arr[left]);
             System.out.println("target:" + target + "-target value:" + arr[target]);
             System.out.println("right :" + right +  "-right  value:" + arr[right]);
-
-
-//            System.out.println("right:" + right);
-//            System.out.println("right:" + right + "-right value:" + arr[right]);
-
-//            swap(left, right);
             while (arr[i] <= arr[target]){
                 i ++;
                 if(i == right) {
                     break;
                 }
-//                break;
             }
             if(i >= j) {
                 break;
             }
             swap(i, j);
-//            swap(left, right);
         }
         swap(left, j);
         return j;
@@ -66,7 +59,7 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int[] xx = {4,6,4,5,1,3,5,62,2,3};
+        int[] xx = {4,6,4,5,23,3,4,2,33,2,67,35,1,3,5,62,2,3};
         QuickSort qs = new QuickSort(xx);
 
         qs.sort(0,xx.length -1);
