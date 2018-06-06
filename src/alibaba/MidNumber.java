@@ -87,7 +87,7 @@ public class MidNumber {
         return j;
 
     }
-    private void swap(int i, int j, @NotNull int[] numbers){
+    private void swap(int i, int j, int[] numbers){
         int temp = numbers[i];
         numbers[i] = numbers[j];
         numbers[j] = temp;
@@ -99,4 +99,7 @@ public class MidNumber {
         }
         System.out.println("}");
     }
+
+
+
 }
