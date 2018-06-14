@@ -93,6 +93,9 @@ public class TreeNode {
     }
 
     public static TreeNode constructTree(char[] chars){
+        if(chars.length == 0) {
+            return null;
+        }
         TreeNode root = new TreeNode(chars[0]);
 //        Queue<TreeNode> queueFather = new LinkedList<>();
         Queue<TreeNode> queueFather = new LinkedList<>();
