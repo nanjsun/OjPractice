@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class ListNode {
     int val;
-    niuke.swordoffer.ListNode next = null;
+    public niuke.swordoffer.ListNode next = null;
 
     ListNode(int val) {
         this.val = val;

@@ -1,5 +1,7 @@
 package niuke.swordoffer;
 
+import java.util.Scanner;
+
 /**
  * test
  * dynamic plain
@@ -10,9 +12,18 @@ package niuke.swordoffer;
 public class FindGreatestSumOfSubArray {
 
     public static void main(String[] args) {
-        int[] array = {1,-2,3,10,-4,7,2,-5};
+
+//        int[] array = {1,-2,3,10,-4,7,2,-5};
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] array = new int[n];
+        for(int i = 0; i < n; ++i) {
+            array[i] = sc.nextInt();
+        }
+
+
         int res = new FindGreatestSumOfSubArray().findGreatestSumSubArray(array);
-        System.out.println("res: " + res);
+        System.out.println(res);
     }
 
     public int findGreatestSumSubArray(int[] array) {
@@ -28,17 +39,3 @@ public class FindGreatestSumOfSubArray {
         return res;
     }
 }
-
-//    public int findGreatestSumSubArray(int[] array) {
-//        int max = array[0];
-//        for(int i = 0; i < array.length; ++i) {
-//            int current = 0;
-//            for(int j = i; j < array.length; ++j) {
-//                current += array[j];
-//                if(current > max) {
-//                    max = current;
-//                }
-//            }
-//        }
-//        return max;
-//    }
